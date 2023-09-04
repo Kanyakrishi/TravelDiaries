@@ -12,6 +12,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
+
 function Header() {
   return (
     <header className="sticky z-50 grid grid-cols-4 bg-white shadow-md p-5 md:p-10">
