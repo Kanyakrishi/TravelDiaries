@@ -7,7 +7,7 @@ import {
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
-import photoData from "./Photos";
+import photoData from "../components/Photos";
 
 export default function Home() {
   const { isLoaded } = useLoadScript({
