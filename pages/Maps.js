@@ -26,7 +26,7 @@ function Map() {
       <Header />
       <div className="m-5 shadow-md items-center">
         <GoogleMap
-          zoom={10}
+          zoom={5}
           center={coordinates}
           mapContainerClassName="map-container"
         >

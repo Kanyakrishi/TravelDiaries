@@ -8,13 +8,30 @@ export default [
       ADDRESS: "8720 Russell Road",
       YEAR: "2022",
       EXPERIENCE: "Fun time :)",
-      DESCRIPTION: "Winter break with Periamma",
+      DESCRIPTION: "Enchanted.",
       PICTURE:
-        "https://dl.dropboxusercontent.com/scl/fi/g05sq4j2p1ah5ltwea88r/1.png?rlkey=o2tzt2bgygnfwmg7jqjec0bzp",
+        "https://dl.dropboxusercontent.com/scl/fi/94n1ueo2yrm88uk5w6oh6/san-jose.jpeg?rlkey=zkdc29d93yqx64dtb7fbql275",
     },
     geometry: {
       type: "Point",
       coordinates: [-121.893028, 37.33548],
+    },
+  },
+  {
+    type: "Feature",
+    properties: {
+      ID: 3,
+      NAME: "Santa Cruz",
+      ADDRESS: "8720 Russell Road",
+      YEAR: "2022",
+      EXPERIENCE: "Fun time :)",
+      DESCRIPTION: "Mystery Spot.",
+      PICTURE:
+        "https://dl.dropboxusercontent.com/scl/fi/1eek1vgtkweha80czcau9/santacruz.jpeg?rlkey=9upzkcbl39vdaviljzev7y29w",
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [-122.030792, 36.974117],
     },
   },
   {
@@ -25,13 +42,13 @@ export default [
       ADDRESS: "8720 Russell Road",
       YEAR: "2022",
       EXPERIENCE: "Fun time :)",
-      DESCRIPTION: "Winter break with Periamma",
+      DESCRIPTION: "Beauties",
       PICTURE:
-        "https://dl.dropboxusercontent.com/scl/fi/g05sq4j2p1ah5ltwea88r/1.png?rlkey=o2tzt2bgygnfwmg7jqjec0bzp",
+        "https://dl.dropboxusercontent.com/scl/fi/s6iqdrpy2uxm3k9qgarag/SFO.jpg?rlkey=36d1ds0teb42uezn9m0ber96t",
     },
     geometry: {
       type: "Point",
-      coordinates: [-122.26564, 37.45252],
+      coordinates: [-122.498055, 37.865894],
     },
   },
   {
@@ -42,9 +59,9 @@ export default [
       ADDRESS: "8720 Russell Road",
       YEAR: "2022",
       EXPERIENCE: "Fun time :)",
-      DESCRIPTION: "House Warming",
+      DESCRIPTION: "House Warming.",
       PICTURE:
-        "https://dl.dropboxusercontent.com/scl/fi/g05sq4j2p1ah5ltwea88r/1.png?rlkey=o2tzt2bgygnfwmg7jqjec0bzp",
+        "https://dl.dropboxusercontent.com/scl/fi/c98rx5if6uvs177lkw7cs/austin.jpeg?rlkey=t94rcr0pq2mu3wzk51td5frdg",
     },
     geometry: {
       type: "Point",
@@ -93,7 +110,7 @@ export default [
       ADDRESS: "8720 Russell Road",
       YEAR: "2022",
       EXPERIENCE: "Fun time :)",
-      DESCRIPTION: "Thanksgiving 2022",
+      DESCRIPTION: "Thanksgiving 2022.",
       PICTURE:
         "https://dl.dropboxusercontent.com/scl/fi/m9evidkc0tw5trx8yh2r9/kentucky.jpeg?rlkey=nd83sjv2q6c64zb3vddv3kld4",
     },
@@ -110,7 +127,7 @@ export default [
       ADDRESS: "8720 Russell Road",
       YEAR: "2022",
       EXPERIENCE: "Fun time :)",
-      DESCRIPTION: "Christmas 2022",
+      DESCRIPTION: "Christmas 2022.",
       PICTURE:
         "https://dl.dropboxusercontent.com/scl/fi/fvhm8ktw6qwx664s68afv/seattle.png?rlkey=bctpp0luul6ljoqw7zupfipqt",
     },
@@ -127,13 +144,13 @@ export default [
       ADDRESS: "8720 Russell Road",
       YEAR: "2022",
       EXPERIENCE: "Fun time :)",
-      DESCRIPTION: "Winter break with Periamma",
+      DESCRIPTION: "Winter break with Periamma.",
       PICTURE:
         "https://dl.dropboxusercontent.com/scl/fi/g05sq4j2p1ah5ltwea88r/1.png?rlkey=o2tzt2bgygnfwmg7jqjec0bzp",
     },
     geometry: {
       type: "Point",
-      coordinates: [-122.498055, 37.865894],
+      coordinates: [-122.26564, 37.45252],
     },
   },
   {
@@ -144,7 +161,7 @@ export default [
       ADDRESS: "8720 Russell Road",
       YEAR: "2022",
       EXPERIENCE: "Fun time :)",
-      DESCRIPTION: "Welcome to the US!!!!",
+      DESCRIPTION: "The journey begins :)",
       PICTURE:
         "https://dl.dropboxusercontent.com/scl/fi/xmynr7mvcrxxo8739k7vs/dallas.jpeg?rlkey=us53ef2bjjr4z4kri30ow0yfp",
     },
@@ -161,7 +178,7 @@ export default [
       ADDRESS: "8720 Russell Road",
       YEAR: "2022",
       EXPERIENCE: "Fun time :)",
-      DESCRIPTION: "Fam Jam",
+      DESCRIPTION: "Theme Park with Fam",
       PICTURE:
         "https://dl.dropboxusercontent.com/scl/fi/qa2c7by0ugrn9t3yomgiw/sanAntonio.jpeg?rlkey=y7c27dn9hqkmx0cbdknauf7i4",
     },
@@ -176,11 +193,10 @@ export default [
       ID: 11,
       NAME: "Orlando",
       ADDRESS: "8720 Russell Road",
-      YEAR: "2022",
-      EXPERIENCE: "Fun time :)",
-      DESCRIPTION: "Winter break with Periamma",
-      PICTURE:
-        "https://dl.dropboxusercontent.com/scl/fi/g05sq4j2p1ah5ltwea88r/1.png?rlkey=o2tzt2bgygnfwmg7jqjec0bzp",
+      YEAR: "2023",
+      EXPERIENCE: "Coming Soon!!!!! ",
+      DESCRIPTION: "Coming Soon!!!!!",
+      PICTURE: "",
     },
     geometry: {
       type: "Point",

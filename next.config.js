@@ -9,6 +9,7 @@ module.exports = {
       "wwww.drive.google.com",
       "drive.google.com",
       "dl.dropboxusercontent.com",
+      "www.google.com"
     ],
   },
 };

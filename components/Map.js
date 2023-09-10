@@ -19,7 +19,7 @@ function Map() {
   return (
     <div>
       <GoogleMap
-        zoom={10}
+        zoom={5}
         center={coordinates}
         mapContainerClassName="map-container"
         style={mapStyles}
