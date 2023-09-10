@@ -14,7 +14,7 @@ function RedirectReactRouterExample() {
 
 export default function Home() {
   return (
-    <div class="h-screen w-full bg-cover bg-no-repeat">
+    <div className="h-screen w-full bg-cover bg-no-repeat">
       {/* Header */}
       <Header />
 

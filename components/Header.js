@@ -5,12 +5,28 @@ import icon from "../public/icon.png";
 // import { ImInstagram, ImLinkedin } from "react-icons/im";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faLinkedinIn,
   faFacebook,
   faTwitter,
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
+// import {
+//   HiHome,
+//   HiUser,
+//   HiViewColumns,
+//   HiRectangleGroup,
+//   HiChatBubbleBottomCenterText,
+//   HiEnvelope,
+// } from "react-icons/hi2";
+
+// nav data
+// export const navData = [
+//   { name: "home", path: "/" },
+//   { name: "about", path: "/" },
+//   { name: "destinations", path: "/Map" },
+//   { name: "blog", path: "/" },
+// ];
 
 
 function Header() {
@@ -29,9 +45,9 @@ function Header() {
         KKs Travel Diary
       </div>
       <div className=" bg-gray-100 h-20 text-shadow-lg col-span-2 flex items-center shadow-sm text-gray-500 font-mono pl-20 pr-20 ">
-        <p className="flex-grow cursor-pointer">Home</p>
-        <p className="flex-grow cursor-pointer">About</p>
-        <p className="flex-grow cursor-pointer">Destinations</p>
+        <Link href="/" className="flex-grow cursor-pointer">Home</Link>
+        <Link href="/" className="flex-grow cursor-pointer">About</Link>
+        <Link href="/Maps" className="flex-grow cursor-pointer">Destinations</Link>
         <p>Blog</p>
       </div>
       <div className="relative items-center">
@@ -49,7 +65,7 @@ function Header() {
             <FontAwesomeIcon icon={faFacebook} size="2x" />
           </a>
           <a
-            href="https://www.twitter.com/jamesqquick"
+            href="https://www.twitter.com/kanyakrishi"
             className="twitter social"
           >
             <FontAwesomeIcon icon={faTwitter} size="2x" />
