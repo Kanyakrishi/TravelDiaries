@@ -1,16 +1,13 @@
-import React, { useCallback, useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState } from "react";
 import Image from "next/image";
 import Header from "./../components/Header";
 import {
   useLoadScript,
-  withGoogleMap,
-  withScriptjs,
   GoogleMap,
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
-import pic1 from "../public/1.jpg";
-import photoData from "./Photos";
+import photoData from "./photos";
 
 export default function Home() {
   const { isLoaded } = useLoadScript({
