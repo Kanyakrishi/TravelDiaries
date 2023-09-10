@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { SearchIcon } from "@heroicons/react/solid";
 import icon from "../public/icon.png";
 // import { ImInstagram, ImLinkedin } from "react-icons/im";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

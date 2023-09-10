@@ -10,7 +10,7 @@ import {
   InfoWindow,
 } from "@react-google-maps/api";
 import pic1 from "../public/1.jpg";
-import photoData from "./photos";
+import photoData from "./Photos";
 
 export default function Home() {
   const { isLoaded } = useLoadScript({
