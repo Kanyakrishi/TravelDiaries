@@ -1,15 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import icon from "../public/icon.png";
-// import { ImInstagram, ImLinkedin } from "react-icons/im";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faTwitter,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
+import {
+  MenuIcon
+} from "@heroicons/react/solid";
 // import {
 //   HiHome,
 //   HiUser,
@@ -20,62 +17,46 @@ import Link from "next/link";
 // } from "react-icons/hi2";
 
 // nav data
-// export const navData = [
-//   { name: "home", path: "/" },
-//   { name: "about", path: "/" },
-//   { name: "destinations", path: "/Map" },
-//   { name: "blog", path: "/" },
-// ];
+export const navData = [
+  { name: "home", path: "/" },
+  { name: "about", path: "/About" },
+  { name: "destinations", path: "/Maps" },
+  { name: "blog", path: "/Blog" },
+];
+
 
 
 function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header className="sticky z-50 grid grid-cols-4 bg-white shadow-md p-5 md:p-10">
+    <header className="sticky top-0 z-50 bg-white shadow-md p-5 md:flex md:justify-between md:items-center">
       {/* Left div */}
-      <div className=" relative flex items-center cursor-pointer my-auto text-gray-500 text-xl">
-        <Image
-          src={icon}
-          alt="My icon"
-          objectFit="contain"
-          objectPosition="left"
-          width={150}
-          height={150}
-        />
-        KKs Travel Diary
-      </div>
-      <div className=" bg-gray-100 h-20 text-shadow-lg col-span-2 flex items-center shadow-sm text-gray-500 font-mono pl-20 pr-20 ">
-        <Link href="/" className="flex-grow cursor-pointer">Home</Link>
-        <Link href="/" className="flex-grow cursor-pointer">About</Link>
-        <Link href="/Maps" className="flex-grow cursor-pointer">Destinations</Link>
-        <p>Blog</p>
-      </div>
-      <div className="relative items-center">
-        <div className="items-center right-0 top-0 flex absolute pl-10 space-x-3 ">
-          <a
-            href="https://www.linkedin.com/in/kanya-krishi14/"
-            className="youtube social"
-          >
-            <FontAwesomeIcon icon={faLinkedin} size="2x" />
-          </a>
-          <a
-            href="https://www.facebook.com/kanya.krishi"
-            className="facebook social"
-          >
-            <FontAwesomeIcon icon={faFacebook} size="2x" />
-          </a>
-          <a
-            href="https://www.twitter.com/kanyakrishi"
-            className="twitter social"
-          >
-            <FontAwesomeIcon icon={faTwitter} size="2x" />
-          </a>
-          <a
-            href="https://www.instagram.com/kanyakrishi/"
-            className="instagram social"
-          >
-            <FontAwesomeIcon icon={faInstagram} size="2x" />
-          </a>
+      <div className="flex items-center space-x-3 ">
+        <div className="flex-shrink-0">
+          <Image src={icon} alt="My icon" objectFit="contain" objectPosition="left" width={150} height={150} />
         </div>
+        <div className="hidden md:block text-xl text-gray-500">KKs Travel Diary</div>
+        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
+          <MenuIcon className="h-6" />
+        </button>
+      </div>
+
+      {/* Navigation Links */}
+      <div className={`md:flex ${isOpen ? "flex" : "hidden"} justify-between flex-col md:flex-row space-x-0 md:space-x-4 md:border-2 rounded-full p-8 hover:opacity-80 hover:shadow-lg`}>
+        <Link href="/" className="text-gray-500 hover:text-gray-700">Home</Link>
+        <Link href="/About" className="text-gray-500 hover:text-gray-700">About</Link>
+        <Link href="/Maps" className="text-gray-500 hover:text-gray-700">Destinations</Link>
+        <Link href="/Blog" className="text-gray-500 hover:text-gray-700">Blog</Link>
+      </div>
+
+
+      {/* Right div - Social Icons */}
+      <div className="flex space-x-3">
+        <a href="https://www.linkedin.com/in/kanya-krishi14/" className="text-blue-600"><FontAwesomeIcon icon={faLinkedin} size="lg" /> </a>
+        <a href="https://www.facebook.com/kanya.krishi" className="text-blue-600"><FontAwesomeIcon icon={faFacebook} size="lg" /></a>
+        <a href="https://www.twitter.com/kanyakrishi" className="text-blue-600"><FontAwesomeIcon icon={faTwitter} size="lg" /></a>
+        <a href="https://www.instagram.com/kanyakrishi/" className="text-pink-600"><FontAwesomeIcon icon={faInstagram} size="lg" /> </a>
       </div>
     </header>
   );
@@ -83,11 +64,3 @@ function Header() {
 
 export default Header;
 
-//  <div className="flex items-center md:border-2 rounded-full py-2 md:shadow-lg">
-//   <input
-//     className="pl-5 bg--transparent outline-none flex-grow text-gray-600 text-sm placeholder-gray-400"
-//     type="text"
-//     placeholder="Start your Search.."
-//   />
-//   <SearchIcon className="hidden md:inline-flex h-8 bg-red-400 text-white rounded-full p-2 cursor-pointer md:mx-2" />
-// </div>

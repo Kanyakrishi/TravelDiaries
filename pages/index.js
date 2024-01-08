@@ -3,18 +3,19 @@ import Maps from "@/pages/Maps";
 import Image from "next/image";
 import BackgroundImage from "@/components/BackgroundImage";
 import { Route, Routes, useNavigate } from "react-router-dom";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="h-screen w-full bg-cover bg-no-repeat">
-      {/* Header */}
-      <Header />
-
-      {/* Image */}
-      <BackgroundImage />
-
-      {/* Body */}
-      
-    </div>
+      <div className="flex flex-col min-h-screen">
+        <main className="flex-grow">
+          {/* Header */}
+          <Header />
+          {/* Image */}
+          <BackgroundImage />
+          {/* Body */}
+        </main>
+        <Footer />
+      </div>
   );
 }

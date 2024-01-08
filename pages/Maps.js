@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import Image from "next/image";
 import Header from "./../components/Header";
+import Footer from "@/components/Footer";
 import {
   useLoadScript,
   GoogleMap,
@@ -22,9 +23,12 @@ function Map() {
   const coordinates = useMemo(() => ({ lng: -96.808891, lat: 32.779167}), []);
   const [selectedPark, setSelectedPark] = useState(null);
   return (
-    <div>
-      <Header />
-      <div className="m-5 shadow-md items-center">
+    <div className="flex flex-col min-h-screen">
+      <main className="flex-grow">
+        {/* Header */}
+        <Header />
+        {/* Content */}
+        <div className="m-5 shadow-md items-center">
         <GoogleMap
           zoom={5}
           center={coordinates}
@@ -73,6 +77,8 @@ function Map() {
           )}
         </GoogleMap>
       </div>
+      </main>
+      <Footer />
     </div>
   );
 }
